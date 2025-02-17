@@ -1,6 +1,40 @@
 # Git Commands
 
 ## 1. Basic Git Commands
+### List All Commit and Branches
+
+You can use the following Git command to view all commits along with their branches:
+
+```sh
+git log --oneline --decorate --all --graph
+```
+```sh
+Explanation:
+--oneline → Displays each commit in a single line for readability.
+--decorate → Shows branch names, tags, and HEAD pointers.
+--all → Includes commits from all branches.
+--graph → Shows a visual representation of branch structures.
+```
+<img src="src/A.png"></img>
+
+### list all branches:
+
+```bash
+git branch -a  # Shows local and remote branches
+```
+<img src="src/B.png"></img>
+
+
+### Go To particular Commit
+```bash
+git checkout <commit_hash>: Switches to a specific commit.
+```
+
+### Create New Branch
+```bash
+git checkout -b <branch_name>: Creates a new branch and switches to it.
+```
+
 
 ### Setting Up Git
 ```bash
@@ -8,6 +42,11 @@ git config --global user.name "Your Name": Set your Git username.
 
 git config --global user.email "your.email@example.com": Set your Git email.
 ```
+
+
+
+
+
 ### Create a new local repository
 ```bash
 git init: Initializes a new Git repository in the current directory.
